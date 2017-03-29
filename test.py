@@ -8,6 +8,7 @@ PERSONS = [
 ]
 
 r =[]
+u = []
 
 def filter_by_age_range(age_min, age_max):
     # Returns the list of NAMEs within the provided age range
@@ -17,9 +18,9 @@ def filter_by_age_range(age_min, age_max):
     for i in range(0,len(PERSONS)):
 
       if age_min <= PERSONS [i]["AGE"] <= age_max:
-            print PERSONS[i]["NAME"]
+            r.append(PERSONS[i]["NAME"])
 
-    pass
+    return r
 
 
 def filter_by_location(location):
@@ -29,7 +30,7 @@ def filter_by_location(location):
     for i in range(0,len(PERSONS)):
 
         if location == PERSONS[i]["LOCATION"]:
-            print PERSONS[i]["NAME"]
+            return PERSONS[i]["NAME"]
 
     pass
 
@@ -40,17 +41,21 @@ def sorted_name():
 
     for i in range(0,len(PERSONS)):
 
-        r.append(PERSONS[i]["NAME"])
+        u.append(PERSONS[i]["NAME"])
 
-    r.sort()
-    print r
+    u.sort()
+    return r
 
     pass
 
 
-filter_by_age_range(10,20)
+filter_by_age = filter_by_age_range(10,20)
+print filter_by_age
 print "==" * 10
-filter_by_location("QUEZON")
+filter_loc = filter_by_location("QUEZON")
+print filter_loc
 print '==' * 20
-sorted_name()
+sorted_ = sorted_name()
+print sorted_
+
 #print len(PERSONS)
