@@ -22,6 +22,7 @@ def filter_by_age_range(age_min, age_max):
 
     return r
 
+    pass
 
 def filter_by_location(location):
     # Returns the list of NAMEs from the given using PERSONS as data table
