@@ -23,7 +23,7 @@ def filter_by_age_range(age_min, age_max):
 
     return r
 
-    pass
+  
 
 def filter_by_location(location):
     # Returns the list of NAMEs from the given using PERSONS as data table
@@ -36,8 +36,7 @@ def filter_by_location(location):
             l.append(PERSONS[i]["NAME"])
     
     return l
-    pass
-
+   
 
 def sorted_name():
     # Returns the list of NAMEs in ascending order (A-Z) using PERSONS
@@ -50,7 +49,7 @@ def sorted_name():
     u.sort()
     return u
 
-    pass
+ 
 
 
 filter_by_age = filter_by_age_range(10,20)
