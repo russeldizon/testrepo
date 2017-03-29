@@ -44,7 +44,7 @@ def sorted_name():
         u.append(PERSONS[i]["NAME"])
 
     u.sort()
-    return r
+    return u
 
     pass
 
